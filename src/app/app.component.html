@@ -5,11 +5,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h1>Artist Directory</h1>
-            <p *ngIf="query"><strong>For</strong> {{query}}</p>
-            <form action="" method="post">
+            <form class="mb-2">
               <input type="text" name="text">
               <!-- <input type="submit" value="Search"> -->
             </form>
+            <p *ngIf="query"><strong>For</strong> {{query}}</p>
           </div>
         </div>
       </div>
@@ -21,11 +21,11 @@
 
         <div class="col-lg-6 card-container" *ngFor="let artist of artists" (click) = "showArtists($event, artist)">
           <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img [src]="'assets/img/team/' + artist.shortname +'.jpg'" class="img-fluid" alt="{{ 'Photo of ' + artist.name}}"></div>
             <div class="member-info">
               <h4>{{artist.name}}</h4>
               <span>{{artist.reknown}}</span>
-              <p>@{{artist.shortname}}</p>
+              <p>{{artist.short}}</p>
               <div class="social">
                 <a href=""><i class="ri-twitter-fill"></i></a>
                 <a href=""><i class="ri-facebook-fill"></i></a>
