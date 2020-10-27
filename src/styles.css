@@ -1044,6 +1044,7 @@ body {
   .team .member .pic {
     overflow: hidden;
     width: 180px;
+    height: 180px;
     border-radius: 50%;
   }
   
@@ -1128,6 +1129,7 @@ body {
 
   .team .card-container{
     margin-bottom: 1.5rem;
+    cursor: pointer;
   }
   
   /*--------------------------------------------------------------
