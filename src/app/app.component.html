@@ -6,7 +6,7 @@
           <div class="col-lg-6">
             <h1>Artist Directory</h1>
             <form class="mb-2">
-              <input type="text" name="text">
+              <input type="text" name="text" [(ngModel)]="query">
               <!-- <input type="submit" value="Search"> -->
             </form>
             <p *ngIf="query"><strong>For</strong> {{query}}</p>
