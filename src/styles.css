@@ -1125,6 +1125,10 @@ body {
   .team .member .social a + a {
     margin-left: 8px;
   }
+
+  .team .card-container{
+    margin-bottom: 1.5rem;
+  }
   
   /*--------------------------------------------------------------
   # Pricing
