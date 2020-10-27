@@ -9,8 +9,13 @@ export class AppComponent {
   query: string;
   artists: object;
 
+  showArtists(e, item){
+    console.log(item)
+    this.query = item.name
+  }
+
   constructor(){
-    this.query = 'Stephnie'
+    this.query = ''
     this.artists = [
       {
         "name":"Barot Bellingham",

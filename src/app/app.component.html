@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h1>Artist Directory</h1>
-            <p><strong>For</strong> {{query}}</p>
+            <p *ngIf="query"><strong>For</strong> {{query}}</p>
             <form action="" method="post">
               <input type="text" name="text">
               <!-- <input type="submit" value="Search"> -->
@@ -19,7 +19,7 @@
     <div class="container" data-aos="fade-up">
       <div class="row">
 
-        <div class="col-lg-6 card-container" *ngFor="let artist of artists">
+        <div class="col-lg-6 card-container" *ngFor="let artist of artists" (click) = "showArtists($event, artist)">
           <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
             <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
