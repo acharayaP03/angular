@@ -20,20 +20,7 @@
       <div class="row">
 
         <div class="col-lg-6 card-container" *ngFor="let artist of artists" (click) = "showArtists($event, artist)">
-          <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pic"><img [src]="'assets/img/team/' + artist.shortname +'.jpg'" class="img-fluid" alt="{{ 'Photo of ' + artist.name}}"></div>
-            <div class="member-info">
-              <h4>{{artist.name}}</h4>
-              <span>{{artist.reknown}}</span>
-              <p>{{artist.short}}</p>
-              <div class="social">
-                <a href=""><i class="ri-twitter-fill"></i></a>
-                <a href=""><i class="ri-facebook-fill"></i></a>
-                <a href=""><i class="ri-instagram-fill"></i></a>
-                <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-              </div>
-            </div>
-          </div>
+          <app-artist-items [artist]="artist"></app-artist-items>  
         </div>
 
       </div>
