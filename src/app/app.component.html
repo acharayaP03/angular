@@ -19,7 +19,7 @@
     <div class="container" data-aos="fade-up">
       <div class="row">
 
-        <div class="col-lg-6 card-container" *ngFor="let artist of artists" (click) = "showArtists($event, artist)">
+        <div class="col-lg-6 card-container" *ngFor="let artist of (artists | searchArtist : query)" (click) = "showArtists($event, artist)">
           <app-artist-items [artist]="artist"></app-artist-items>  
         </div>
 
