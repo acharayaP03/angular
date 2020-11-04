@@ -1,0 +1,34 @@
+<main id="main">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="portfolio-details-container">
+
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="assets/img/team/{{artist.shortname}}.jpg" class="img-fluid img-thumbnail" alt="{{artist.name}}">
+          </div>
+
+          <div class="portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: {{artist.category}}</li>
+              <li><strong>Reknown</strong>:{{artist.reknown}}</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>{{artist.name}}</h2>
+          <p>
+            {{artist.bio}}
+          </p>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->

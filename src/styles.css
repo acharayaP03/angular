@@ -9,7 +9,7 @@ body {
   
   a {
     color: #47b2e4;
-    text-decoration: none;
+    text-decoration: none !important;
   }
   
   a:hover {
@@ -104,6 +104,8 @@ body {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
+    background: rgba(40, 58, 90, 0.9);
+    margin-bottom: 20px;
   }
   
   #header.header-scrolled, #header.header-inner-pages {
@@ -126,6 +128,20 @@ body {
   
   #header .logo img {
     max-height: 40px;
+  }
+    
+  #header input[type="text"] {
+    background: #fff;
+    padding: 10px 10px;
+    position: relative;
+    border-radius: 50px;
+    border: 0;
+    width: calc(100% - 100px);
+    text-align: center;
+  }
+  #header input[type="text"]:focus{
+    outline: none;
+    border: none;
   }
   
   /*--------------------------------------------------------------
@@ -519,7 +535,7 @@ body {
   # Sections General
   --------------------------------------------------------------*/
   section {
-    padding: 60px 0;
+    padding: 80px 0;
     overflow: hidden;
   }
   
@@ -971,6 +987,8 @@ body {
   }
   
   .portfolio .portfolio-item .portfolio-img {
+    width: 500px;
+    height: 500px;
     overflow: hidden;
   }
   
@@ -1032,6 +1050,9 @@ body {
   /*--------------------------------------------------------------
   # Team
   --------------------------------------------------------------*/
+  .team{
+    margin-top: 50px !important;
+  }
   .team .member {
     position: relative;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1588,6 +1609,10 @@ body {
   }
   
   .portfolio-details .portfolio-details-carousel {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 20%;
     position: relative;
     z-index: 1;
   }
@@ -1686,9 +1711,7 @@ body {
     font-weight: 600;
     color: #37517e;
   }
-  
 
-  
   #footer .footer-newsletter form input[type="text"] {
     margin-top: 30px;
     background: #fff;
